@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>Hiragana & Katakana alphabet using ordered list &middot; CodePen</title>
+
+  <!--
+    Copyright (c) 2012 Azik Samarkandiy, http://codepen.io/html5web
+
+    Permission is hereby granted, free of charge, to any person obtaining
+    a copy of this software and associated documentation files (the
+    "Software"), to deal in the Software without restriction, including
+    without limitation the rights to use, copy, modify, merge, publish,
+    distribute, sublicense, and/or sell copies of the Software, and to
+    permit persons to whom the Software is furnished to do so, subject to
+    the following conditions:
+
+    The above copyright notice and this permission notice shall be
+    included in all copies or substantial portions of the Software.
+
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+    EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+    MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+    NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+    LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+    OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+    WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+  -->
+
+  <style>
+html {
+  background: #ffffff;
+  height: 100%;
+  padding: 0 40px 0 40px;
+}
+
+h1 {
+  color: #222222;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Arial', sans-serif;
+  text-shadow: 0 0 10px #ffffff;
+}
+
+ol {
+  background: linear-gradient(#e85b46, #ff9039);
+  list-style: hiragana;
+  width: 5%;
+  min-width: 65px;
+  height: 204px;
+  float: left;
+  margin: 0 auto;
+  padding-left: 50px;
+  box-shadow: 0 0 10px #000000;
+}
+
+li {
+  color: #ffffff;
+  width: 45px;
+  padding: 10px;
+  margin-top: -1px;
+  font-size: 16px;
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  text-shadow: 1px 1px 1px #222222;
+  border: solid thin #666;
+}
+li:hover {
+  background: linear-gradient(#dddddd, #444444);
+  color: #ffffff;
+  transform: scale(1.1);
+  border-radius: 5px;
+  border: solid thin #444444;
+  text-shadow: 1px 1px 1px #000000;
+}
+li:active {
+  background: linear-gradient(#ffffff, #cccccc);
+  color: yellow;
+}
+
+.katakana ol {
+  list-style: katakana;
+}
+
+::selection {
+  background: purple;
+}
+
+ol > li:nth-child(1) {
+  background: #e63c19;
+}
+ol > li:nth-child(1):hover {
+  background: #e62119;
+}
+
+ol > li:nth-child(2) {
+  background: #e65f19;
+}
+ol > li:nth-child(2):hover {
+  background: #e62819;
+}
+
+ol > li:nth-child(3) {
+  background: #e68219;
+}
+ol > li:nth-child(3):hover {
+  background: #e63019;
+}
+
+ol > li:nth-child(4) {
+  background: #e6a419;
+}
+ol > li:nth-child(4):hover {
+  background: #e63719;
+}
+
+ol > li:nth-child(5) {
+  background: #e6c719;
+}
+ol > li:nth-child(5):hover {
+  background: #e63f19;
+}
+  </style>
+
+  <style>
+    #codepen-footer, #codepen-footer * {
+      -webkit-box-sizing: border-box !important;
+      -moz-box-sizing: border-box !important;
+      box-sizing: border-box !important;
+    }
+    #codepen-footer {
+      display: block !important;
+      position: fixed !important;
+      top: auto !important;
+      bottom: 0 !important;
+      left: 0 !important;
+      right: auto !important;
+      width: 100% !important;
+      padding: 0 10px !important;
+      margin: 0 !important;
+      height: 30px !important;
+      line-height: 30px !important;
+      font-size: 12px !important;
+      color: #eeeeee !important;
+      background-color: #505050 !important;
+      text-align: left !important;
+      background: -webkit-linear-gradient(top, #505050, #383838) !important;
+      background: -moz-linear-gradient(top, #505050, #383838) !important;
+      background: -ms-linear-gradient(top, #505050, #383838) !important;
+      background: -o-linear-gradient(top, #505050, #383838) !important;
+      border-top: 1px solid black !important;
+      border-bottom: 1px solid black !important;
+      border-radius: 0 !important;
+      border-image: none !important;
+      box-shadow: inset 0 1px 0 #6e6e6e, 0 2px 2px rgba(0, 0, 0, 0.4) !important;
+      z-index: 300 !important;
+      font-family: "Lucida Grande", "Lucida Sans Unicode", Tahoma, sans-serif !important;
+      letter-spacing: 0 !important;
+      word-spacing: normal !important;
+      word-spacing: 0 !important;
+      -webkit-transform: none !important;
+      -moz-transform: none !important;
+      -ms-transform: none !important;
+      -o-transform: none !important;
+      transform: none !important;
+    }
+    #codepen-footer a {
+      color: #a7a7a7 !important;
+      text-decoration: none !important;
+      text-shadow: none !important;
+      border: 0 !important;
+    }
+    #codepen-footer a:hover {
+      color: white !important;
+    }
+    #codepen-footer:before,
+    #codepen-footer:after {
+      display: none;
+    }
+  </style>
+
+  <script src="js/prefixfree.min.js"></script>
+
+</head>
+
+<body>
+
+  <h1>Hiragana</h1>
+<ol>
+ 	<li>a</li>
+ 	<li>i</li>
+ 	<li>u</li>
+ 	<li>e</li>
+ 	<li>o</li>
+</ol>
+<ol start="6">
+  <li>ka</li>
+  <li>ki</li>
+  <li>ku</li>
+  <li>ke</li>
+  <li>ko</li>
+</ol>
+<ol start="11">
+  <li>sa</li>
+  <li>shi</li>
+  <li>su</li>
+  <li>se</li>
+  <li>so</li>
+</ol>
+<ol start="16">
+  <li>ta</li>
+  <li>chi</li>
+  <li>tsu</li>
+  <li>te</li>
+  <li>to</li>
+</ol>
+<ol start="21">
+  <li>na</li>
+  <li>ni</li>
+  <li>nu</li>
+  <li>ne</li>
+  <li>no</li>
+</ol>
+<ol start="26">
+  <li>ha</li>
+  <li>hi</li>
+  <li>fu</li>
+  <li>he</li>
+  <li>ho</li>
+</ol>
+<ol start="31">
+  <li>ma</li>
+  <li>mi</li>
+  <li>mu</li>
+  <li>me</li>
+  <li>mo</li>
+</ol>
+<ol start="36">
+  <li>ya</li>
+  <li>yu</li>
+  <li>yo</li>
+</ol>  
+<ol start="39">
+  <li>ra</li>
+  <li>ri</li>
+  <li>ru</li>
+  <li>re</li>
+  <li>ro</li>
+</ol>  
+<ol start="44">
+  <li>wa</li>
+  <li>wi</li>
+  <li>we</li>
+  <li>wo</li>
+  <li>n</li>
+</ol><br>  
+<div class="katakana">
+<h1>Katakana</h1>
+<ol class="first">
+ 	<li>a</li>
+ 	<li>i</li>
+ 	<li>u</li>
+ 	<li>e</li>
+ 	<li>o</li>
+</ol>
+<ol start="6">
+  <li>ka</li>
+  <li>ki</li>
+  <li>ku</li>
+  <li>ke</li>
+  <li>ko</li>
+</ol>
+<ol start="11">
+  <li>sa</li>
+  <li>shi</li>
+  <li>su</li>
+  <li>se</li>
+  <li>so</li>
+</ol>
+<ol start="16">
+  <li>ta</li>
+  <li>chi</li>
+  <li>tsu</li>
+  <li>te</li>
+  <li>to</li>
+</ol>
+<ol start="21">
+  <li>na</li>
+  <li>ni</li>
+  <li>nu</li>
+  <li>ne</li>
+  <li>no</li>
+</ol>
+<ol start="26">
+  <li>ha</li>
+  <li>hi</li>
+  <li>fu</li>
+  <li>he</li>
+  <li>ho</li>
+</ol>
+<ol start="31">
+  <li>ma</li>
+  <li>mi</li>
+  <li>mu</li>
+  <li>me</li>
+  <li>mo</li>
+</ol>
+<ol start="36">
+  <li>ya</li>
+  <li>yu</li>
+  <li>yo</li>
+</ol>  
+<ol start="39">
+  <li>ra</li>
+  <li>ri</li>
+  <li>ru</li>
+  <li>re</li>
+  <li>ro</li>
+</ol>  
+<ol start="44">
+  <li>wa</li>
+  <li>wi</li>
+  <li>we</li>
+  <li>wo</li>
+  <li>n</li>
+</ol>  
+</div>
+
+  <div id="codepen-footer">
+    <a href="http://codepen.io/html5web/pen/LoHBK" target="_blank">Edit this Pen</a>
+  </div>
+
+</body>
+
+</html>
